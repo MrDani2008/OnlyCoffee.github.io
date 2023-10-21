@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.particualas {
+    display: flex;
+    background-color: blue;
+}
+.beans {
+    position: absolute;
+    rotate: 60deg;
+    width: 20px;
+    height: 20px;
+    
+    animation: beans  3s linear infinite ;
+}
+.beans--uno {
+    left: 50%;
+}
+@keyframes beans {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    } 
+    50%{
+        opacity: .4;
+    } 
+    100%{
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
