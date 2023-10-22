@@ -2,34 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oswald', sans-serif;
 }
 
-.particualas {
+header {
+    background-image: url(./IMAGES/Background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   padding-inline: 1.5em;
+   min-height: 80px;
+   font-size: 1.3rem;
+}
+.nav ul ,li,a {
     display: flex;
-    background-color: blue;
+    gap: 1rem;
+    text-decoration: none;
+    list-style: none;
+    color: #f2f2f2;
 }
-.beans {
-    position: absolute;
-    rotate: 60deg;
-    width: 20px;
-    height: 20px;
+.nav a:hover {
+    text-decoration: underline;
+    transition: all 1s;
+}
+
+.nav .r-container {
+    display: flex;
+    gap: 1rem;
     
-    animation: beans  3s linear infinite ;
 }
-.beans--uno {
-    left: 50%;
+.nav .r-container a {
+    color: #f2f2f2;
+    background-color: #000;
+    padding-inline: 0.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: all 1s;
 }
-@keyframes beans {
-    0% {
-        opacity: 0;
-        bottom: 0;
-    } 
-    50%{
-        opacity: .4;
-    } 
-    100%{
-        opacity: 0;
-        bottom: 100vh;
-    }
+.nav .r-container a:hover {
+    background-color: #f2f2f2;
+    color: #000;
 }
